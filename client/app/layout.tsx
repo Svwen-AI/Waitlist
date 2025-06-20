@@ -10,8 +10,11 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "SVWEN Waitlist",
   description: "Join the waitlist for SVWEN",
-};
+  icons: {
+    icon: '/favicon.png',
+  },
 
+};
 export default function RootLayout({
   children,
 }: Readonly<{

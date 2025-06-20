@@ -1,10 +1,11 @@
-import Footer from "./components/Footer";
-import Form from "./components/Form";
+import Footer from "@/app/components/Footer";
+import Form from "@/app/components/Form";
+
 
 export default function Home() {
   return (
     <>
-      <section className="w-full min-h-screen flex">
+    <section className="w-full min-h-screen flex">
         <div className="w-full lg:w-1/2 relative px-6 sm:px-8 flex flex-col items-center">
           <div className="w-full max-w-md flex flex-col items-start mt-20">
             <div>
