@@ -5,8 +5,8 @@ export const FormTypeEnum = z.enum(['personal', 'company']);
 export const OccupancyEnum = z.enum([
   'student',
   'freelancer',
-  'employeed',
-  'unemployeed',
+  'employed',
+  'unemployed',
   'other',
 ]);
 
