@@ -22,13 +22,13 @@ export const personalController = async (req, res, data) => {
       occupancy: data.occupancy,
     });
 
-    await resend.emails.send({
+    const mail = await resend.emails.send({
       from: "Waitlist <no-reply@svwen.com>",
       to: data.email,
       subject: "You’ve joined the waitlist!",
       html: buildWaitlistEmail({
         name: data.name,
-        message: `Thanks for joining the wailtlist of Mail Pilot as a <strong>${data.occupancy}</strong>. We'll keep you updated as we launch. For now,`,
+        message: `Thanks for joining the wailtlist for <strong>Svwen Mail</strong>. We'll keep you updated as we launch. For now,`,
       }),
     });
 

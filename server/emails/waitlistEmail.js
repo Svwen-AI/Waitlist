@@ -6,14 +6,14 @@ export const buildWaitlistEmail = ({ name, message }) => `
     </div>
 
     <div style="margin-top: 30px;">
-      <p style="font-size: 16px; color: #000000;">Hi <strong>${name}</strong>,</p>
+      <p style="font-size: 16px; color: #000000;">Hey <strong>${name}</strong>,</p>
       <p style="font-size: 16px; color: #000000;">
         ${message}
       </p>
     </div>
 
     <div style="margin: 30px 0; text-align: center;">
-      <a href="https://yourdomain.com" style="display: inline-block; padding: 12px 24px; background-color: #007848; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold;">
+      <a href="https://svwen.com" style="display: inline-block; padding: 12px 24px; background-color: #007848; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: bold;">
         Visit Our Website
       </a>
     </div>

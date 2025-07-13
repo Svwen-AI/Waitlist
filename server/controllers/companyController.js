@@ -23,13 +23,13 @@ export const companyController = async (req, res, data) => {
       teamSize: data.teamSize,
     });
 
-    await resend.emails.send({
+    const mail = await resend.emails.send({
       from: "Waitlist <no-reply@svwen.com>",
       to: data.email,
       subject: "You’ve joined the waitlist!",
       html: buildWaitlistEmail({
         name: data.name,
-        message: `Thanks for joining the Mail Pilot waitlist on the behalf of ${data.companyName}. We'll update you soon on the launch. For now,`,
+        message: `Thanks for joining the Svwen Mail waitlist on the behalf of <strong>${data.companyName}</strong>. We'll update you soon on the launch. For now,`,
       }),
     });
 
